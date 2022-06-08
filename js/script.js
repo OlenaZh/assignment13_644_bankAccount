@@ -25,7 +25,7 @@ function BankAccount(ownerName) {
     };
 }
 
-const account = new BankAccount('Zak Ruvalcaba');
+const account = new BankAccount('Olena Zheliabina');
 
 window.addEventListener('load', () => { 
     $('accountname').innerHTML = account.getOwnerName();
