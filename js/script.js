@@ -27,7 +27,6 @@ function BankAccount(ownerName) {
 
 const account = new BankAccount('Olena Zheliabina');
 
-window.addEventListener('load', () => { 
     $('accountname').innerHTML = account.getOwnerName();
     $('deposit').addEventListener('click', () => {
         let deposit = parseInt(prompt('How much would you like to deposit?'));
@@ -47,4 +46,3 @@ window.addEventListener('load', () => {
         account.withdrawal(withdrawal);
         $('balance').innerHTML = 'Balance: $' + account.getBalance();
     });
-});
